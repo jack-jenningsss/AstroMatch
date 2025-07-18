@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Star, Menu, X } from 'lucide-react';
 
@@ -25,9 +26,9 @@ export function Header() {
             <a href="#home" className="text-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#compatibility" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/compatibility" className="text-foreground hover:text-primary transition-colors">
               Compatibility
-            </a>
+            </Link>
             <a href="#horoscope" className="text-foreground hover:text-primary transition-colors">
               Horoscope
             </a>
@@ -62,9 +63,9 @@ export function Header() {
               <a href="#home" className="text-foreground hover:text-primary transition-colors">
                 Home
               </a>
-              <a href="#compatibility" className="text-foreground hover:text-primary transition-colors">
+              <Link to="/compatibility" className="text-foreground hover:text-primary transition-colors">
                 Compatibility
-              </a>
+              </Link>
               <a href="#horoscope" className="text-foreground hover:text-primary transition-colors">
                 Horoscope
               </a>
