@@ -3,7 +3,7 @@ import { Input } from "./components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select";
 import { Card } from "./components/ui/card";
 import { Star, Calendar, MapPin, Clock } from "lucide-react";
-import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+// import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
 export default function App() {
   // Generate arrays for dropdowns
@@ -29,8 +29,8 @@ export default function App() {
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Compatibility</a>
+              <a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a>
+              <a href="/compatibility" className="text-gray-300 hover:text-white transition-colors">Compatibility</a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">Horoscopes</a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">Zodiac Signs</a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a>

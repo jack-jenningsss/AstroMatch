@@ -1,14 +1,10 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import AstroMatchCompatibility from '../AstroMatch/Cosmic Astrology Compatibility Page/App.tsx';
-import AstroMatchLanding from '../AstroMatch/Cosmic Astrology Landing Page/App.tsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AstroMatchCompatibility from './Cosmic Astrology Compatibility Page/App';
+import AstroMatchLanding from './Cosmic Astrology Landing Page/App';
 
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/compatibility">Compatibility Page</Link> | 
-        <Link to="/landing">Landing Page</Link>
-      </nav>
       <Routes>
         <Route path="/compatibility" element={<AstroMatchCompatibility />} />
         <Route path="/landing" element={<AstroMatchLanding />} />
